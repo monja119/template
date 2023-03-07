@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.photo-article {
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.pdp {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.article {
+  margin: 3em 0;
+  box-shadow: 0 0 10px -4px black;
+  border-radius: 20px;
+}
+
+.formulaire-publication {
+  border-right: 1px solid #999;
+}
+
+.container {
+  margin: 0;
+  max-width: 3000px;
+}/*# sourceMappingURL=style.css.map */
