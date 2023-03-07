@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mon site web</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1>Gestion des offres d'emploi</h1>
+    </div>
+
+    <div class="container mt-5">
+        <h2>Nos offres d'emploi</h2>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Développeur web</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Entreprise A</h6>
+                <p class="card-text">Nous recherchons un développeur web expérimenté pour rejoindre notre équipe.</p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Designer graphique</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Entreprise B</h6>
+                <p class="card-text">Nous recherchons un designer graphique pour concevoir des visuels percutants pour
+                    notre entreprise.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Formulaire -->
+    <div class="container mt-5">
+        <!-- Formulaire -->
+        <form>
+            <h5 class="form-title">Ajoutez un offre d'emploie</h5>
+            <div class="form-group">
+                <label for="jobTitle">Titre de l'offre d'emploi</label>
+                <input type="text" class="form-control" id="jobTitle" placeholder="Entrez le titre de l'offre d'emploi">
+            </div>
+            <div class="form-group">
+                <label for="companyName">Nom de l'entreprise</label>
+                <input type="text" class="form-control" id="companyName" placeholder="Entrez le nom de l'entreprise">
+            </div>
+            <div class="form-group">
+                <label for="jobDescription">Description de l'offre d'emploi</label>
+                <textarea class="form-control" id="jobDescription" rows="3"
+                    placeholder="Entrez la description de l'offre d'emploi"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="contactEmail">Adresse e-mail de contact</label>
+                <input type="email" class="form-control" id="contactEmail"
+                    placeholder="Entrez l'adresse e-mail de contact">
+            </div>
+            <div class="form-group">
+                <label for="contactPhone">Numéro de téléphone de contact</label>
+                <input type="tel" class="form-control" id="contactPhone"
+                    placeholder="Entrez le numéro de téléphone de contact">
+            </div>
+            <div class="form-group">
+                <label for="jobPhoto">Photo de l'offre d'emploi</label>
+                <input type="file" class="form-control-file" id="jobPhoto">
+            </div>
+            <button type="submit" class="btn btn-primary">Soumettre</button>
+        </form>
+    </div>
+</body>
+
+</html>
