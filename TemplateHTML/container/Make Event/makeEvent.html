@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Formulaire de creation d'evenement -->
+    <div class="container">
+        <div class="row">
+            <div class="makeEvent col-md-6 mx-auto">
+                <h1 class="form-title">Ajouter un événement</h1>
+                <form>
+                    <div class="form-group">
+                        <label for="event-name">Nom de l'événement</label>
+                        <input type="text" class="form-control" id="event-name" placeholder="Nom de l'événement">
+                    </div>
+                    <div class="form-group">
+                        <label for="event-date">Date de début l'événement</label>
+                        <input type="date" class="form-control" id="event-date">
+                    </div>
+                    <div class="form-group">
+                        <label for="event-date">Date de fin l'événement</label>
+                        <input type="date" class="form-control" id="event-date">
+                    </div>
+                    <div class="form-group">
+                        <label for="event-description">Description de l'événement</label>
+                        <textarea class="form-control" id="event-description" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="event-info">Information de l'événement</label>
+                        <input type="text" class="form-control" id="event-info"
+                            placeholder="Information de l'événement">
+                    </div>
+                    <div class="form-group">
+                        <label for="event-photo">Ajouter une photo</label>
+                        <input type="file" class="form-control-file" id="event-photo">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Créer l'événement</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
