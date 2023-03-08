@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Forum de discussion</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <style>
+        .commentaires {
+            overflow: auto;
+            max-height: 400px;
+            /* optionnel : pour limiter la hauteur de la section */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Forum de discussion</h1>
+
+        <div class="card" style="margin-bottom: 3em;">
+            <div class="card-body">
+                <h4 class="card-title" style="margin-bottom: 1em;">Sujet de discussion</h4>
+                <h6 class="card-subtitle mb-2 text-muted">Description Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Totam blanditiis quas dolor, hic exercitationem officiis saepe iusto eum maxime temporibus
+                    possimus? Debitis, distinctio inventore nobis vitae molestias sapiente ex nulla maxime saepe minima
+                    magni repellendus error possimus provident commodi eaque modi praesentium. Laboriosam, fuga ut?
+                    Debitis optio neque reprehenderit non.</h6>
+                <div class="media" style="margin-top: 2em;">
+                    <img class="mr-3" src="img/th.jpg" alt="Photo de profil" style="
+                            width: 75px;
+                            height: 75px;
+                            object-fit: cover;
+                            object-position: center;
+                            border: 1px solid #999;
+                        ">
+                    <div class="media-body">
+                        <h5 class="mt-0">Nom du publicateur</h5>
+                        Date de publication
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row commentaires" style="margin-bottom: 3em;">
+            <div class="col-lg-8">
+                <h2>Commentaires</h2>
+                <ul class="list-group">
+                    <!-- DEBUT COMMENTAIRE -->
+                    <li class="list-group-item">
+                        <div class="comment">
+                            <div class="user" style="
+                                    display: flex;
+                                    align-items: center;
+                                    margin-bottom: 1.5em;
+                                ">
+                                <img src="img/th.jpg" alt="Photo de profil de l'utilisateur 1" style="
+                                    width: 3em;
+                                    height: 3em;
+                                    border-radius: 100%;
+                                    object-fit: cover;
+                                    object-position: center;
+                                    margin-right: 1em;
+                                ">
+                                <div class="name">Nom d'utilisateur</div>
+                            </div>
+                            <div class="comment-text">
+                                <p>Ceci est un commentaire.</p>
+                                <small class="text-muted">Publié le 8 mars 2023</small>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- FIN COMMENTAIRE -->
+                </ul>
+
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Ajouter un commentaire</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="comment">Commentaire:</label>
+                        <textarea id="comment" name="comment" class="form-control" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Publier</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
